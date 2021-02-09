@@ -64,6 +64,8 @@ public class CompareArrayList {
 		i1.add(6);
 		val1=i1.equals(i2);
 		System.out.println("after add one more : "+val1);
+		System.out.println(i1);
+		System.out.println(i2);
 		
 	}
 
