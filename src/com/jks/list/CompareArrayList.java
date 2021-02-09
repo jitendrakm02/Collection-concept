@@ -67,6 +67,9 @@ public class CompareArrayList {
 		System.out.println(i1);
 		System.out.println(i2);
 		
+		//removeAll method that is remove all the value from list if present in both list
+		
+		
 	}
 
 }
