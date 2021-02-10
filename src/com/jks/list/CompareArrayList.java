@@ -93,6 +93,28 @@ public class CompareArrayList {
 		System.out.println("value after removeall method from remove2 to remove 1"+val1);
 		System.out.println("remove1"+remove1);
 		System.out.println("remove2"+remove2);
+		
+		//retainAll method concept
+		List<Integer> retain1=new ArrayList<Integer>();
+		retain1.add(1);
+		retain1.add(11);
+		retain1.add(41);
+		retain1.add(12);
+		retain1.add(9);
+		retain1.add(6);
+		List<Integer> retain2=new ArrayList<Integer>();
+		retain2.add(1);
+		retain2.add(11);
+		retain2.add(51);
+		retain2.add(12);
+		retain2.add(13);
+		retain2.add(11);
+		retain2.add(6);
+		val1=retain1.retainAll(retain2);
+		System.out.println(val1);
+		System.out.println("retain1"+retain1);
+		System.out.println("retain2"+retain2);
+		
 	}
 
 }
