@@ -69,7 +69,30 @@ public class CompareArrayList {
 		
 		//removeAll method that is remove all the value from list if present in both list
 		
+		List<String> remove1=new ArrayList<String>();
+		remove1.add("jitendra");
+		remove1.add("piyush");
+		remove1.add("neha");
+		remove1.add("priya");
+		remove1.add("pramod");
+		remove1.add("narayan");
+		remove1.add("hamid");
+		List<String> remove2=new ArrayList<String>();
+		remove2.add("jitendra");
+		remove2.add("piyush");
+		remove2.add("neha");
+		remove2.add("narayan");
+		remove2.add("pramod");
+		remove2.add("neha");
 		
+		val1=remove1.removeAll(remove2);
+		System.out.println("value after removeall method from remove1 to remove 2"+val1);
+		System.out.println("remove1"+remove1);
+		System.out.println("remove2"+remove2);
+		val1=remove2.removeAll(remove1);
+		System.out.println("value after removeall method from remove2 to remove 1"+val1);
+		System.out.println("remove1"+remove1);
+		System.out.println("remove2"+remove2);
 	}
 
 }
